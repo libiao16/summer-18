@@ -13,4 +13,14 @@
             <servlet-name>HelloWorld</servlet-name>
             <url-pattern>/helloworld</url-pattern>
         </servlet-mapping>
+
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <!--<servlet-class>register</servlet-class>-->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
 </web-app>
