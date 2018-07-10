@@ -6,17 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc405203-1c02-42e9-b066-e507b680020a" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/5cff54a3-0f25-4208-a2be-dda576aee2e7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/JdbcCRUDByStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/register.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bc405203-1c02-42e9-b066-e507b680020a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -507,16 +497,15 @@
       <workItem from="1530777348677" duration="1741000" />
       <workItem from="1530846476766" duration="14700000" />
       <workItem from="1531149081127" duration="2298000" />
-      <workItem from="1531155449881" duration="6224000" />
+      <workItem from="1531155449881" duration="6413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25012000" />
+    <option name="totallyTimeSpent" value="25201000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="797" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -536,11 +525,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.34857142" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.34857142" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" />
       <window_info anchor="bottom" id="Database Console" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26466382" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26466382" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
