@@ -1,4 +1,6 @@
-public class user {
+package bean;
+
+public class User {
 
     private String usernid;
     private String password;
@@ -8,7 +10,7 @@ public class user {
     private String address;
     private String tag;
 
-    user(String usernid,String password,String username,String sex,int age,String address,String tag) {
+    User(String usernid, String password, String username, String sex, int age, String address, String tag) {
         this.usernid = usernid;
         this.password = password;
         this.username = username;
