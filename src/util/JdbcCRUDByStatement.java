@@ -14,7 +14,7 @@ import java.sql.*;
  */
 public class JdbcCRUDByStatement {
     Connection connection;
-    JdbcCRUDByStatement(String URL,String UserName,String PassWord){
+    public JdbcCRUDByStatement(String URL,String UserName,String PassWord){
         String url = URL;
         //连接的数据库时使用的用户名
         String username = UserName;
