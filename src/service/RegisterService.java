@@ -1,12 +1,19 @@
 package service;
 
+import bean.User;
 import util.JdbcCRUDByStatement;
 
 public class RegisterService {
-    public static int registerUser(String usernid, String password, String username, String sex, int age, String address, String tag)
+    public static int registerUser(User user)
     {
         JdbcCRUDByStatement userJDBC = new JdbcCRUDByStatement("jdbc:mysql://localhost:3306/summer","root","libiao1998");
-        userJDBC.insert("insert into user values(null,'biaodidi', 'libiao', 'libiao', 'male', 3 ,'didi', '红珍姐的爹') ");
+        userJDBC.insert("insert into user values(null,"+user.getUsernid()+
+                ","+user.getPassword()+
+                ","+user.getUsername()+
+                ","+user.getSex()+
+                ","+user.getAge()+
+                ","+user.getAddress()+
+                ","+user.getTag()+");");
         return 1;
     }
 }

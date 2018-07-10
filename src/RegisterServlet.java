@@ -18,8 +18,7 @@ public class RegisterServlet extends HttpServlet {
             req.getParameter("address"),
             req.getParameter("tag")
         );
-        RegisterService registerService = new RegisterService();
-
+        RegisterService.registerUser(user);
     }
 
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
