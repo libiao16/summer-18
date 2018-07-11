@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class Guide {
 
-    private int id; //id
+    private int gid; //id
 
     private String title; //标题
 
@@ -28,5 +28,66 @@ public class Guide {
 
     private Date updateTime; //最后更新时间
 
+    public Guide(int gid, String title, String content, String place, int theme, String authorId, int thumbs, int beCollected, int beCommented, int isDelete, Date createTime, Date updateTime) {
+        this.gid = gid;
+        this.title = title;
+        this.content = content;
+        this.place = place;
+        this.theme = theme;
+        this.authorId = authorId;
+        this.thumbs = thumbs;
+        this.beCollected = beCollected;
+        this.beCommented = beCommented;
+        this.isDelete = isDelete;
+        this.createTime = createTime;
+        this.updateTime = updateTime;
+    }
 
+    public int getGid() {
+        return gid;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public int getTheme() {
+        return theme;
+    }
+
+    public String getAuthorId() {
+        return authorId;
+    }
+
+    public int getThumbs() {
+        return thumbs;
+    }
+
+    public int getBeCollected() {
+        return beCollected;
+    }
+
+    public int getBeCommented() {
+        return beCommented;
+    }
+
+    public int getIsDelete() {
+        return isDelete;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
 }
