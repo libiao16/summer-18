@@ -20,6 +20,16 @@ public class User {
         this.tag = tag;
     }
 
+    public User(){
+        this.usernid = null;
+        this.password = null;
+        this.username = null;
+        this.sex = null;
+        this.age = 0;
+        this.address = null;
+        this.tag = null;
+    }
+
     public String getUsernid() {
         return usernid;
     }
@@ -46,5 +56,18 @@ public class User {
 
     public String getTag() {
         return tag;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "usernid='" + usernid + '\'' +
+                ", password='" + password + '\'' +
+                ", username='" + username + '\'' +
+                ", sex='" + sex + '\'' +
+                ", age=" + age +
+                ", address='" + address + '\'' +
+                ", tag='" + tag + '\'' +
+                '}';
     }
 }

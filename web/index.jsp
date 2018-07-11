@@ -17,19 +17,39 @@ Hello World!<br/>
 <%
     out.println("Your IP address isasdasd " + request.getRemoteAddr());
 %>
-<script >
+<br>
+欢迎，尊敬的${sessionScope.username}
+<script>
+    // $.ajax({
+    //     url:'http://localhost:8080/register',
+    //     type:'post',
+    //     dataType:"text",
+    //     data:{usernid:'djh321',
+    //         password:'djhmima',
+    //         username:'djh',
+    //         sex:'女',
+    //         age:'14',
+    //         address:'asdas',
+    //         tag:'海贼王'},
+    //     error:function(data){
+    //         alert("error" + data);
+    //     },
+    //     success:function(data) {
+    //         console.log(1)
+    //     }
+    // })
     $.ajax({
-        url:'http://localhost:8080/RegisterServlet',
+        url:'http://localhost:8080/login',
         type:'post',
-        data:{usernid:'djh123',
-            password:'djhmima',
-            username:'djh',
-            sex:'female',
-            age:'14',
-            address:'asdas',
-            tag:'海贼王'},
-        success:function(res) {
-            console.log(res)
+        dataType:"text",
+        data:{usernid:'djh321',
+            password:'djhmima'
+        },
+        error:function(data){
+            alert("error" + data);
+        },
+        success:function(data) {
+            console.log(2)
         }
     })
 </script>

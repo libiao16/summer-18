@@ -1,5 +1,7 @@
 package util;
 
+import bean.User;
+
 import java.sql.*;
 
 //import org.junit.Test;
@@ -48,7 +50,7 @@ public class JdbcCRUDByStatement {
             }
             conn.close();
             st.close();
-            rs.close();
+//            rs.close();
         }catch (Exception e) {
             e.printStackTrace();
         }
@@ -92,19 +94,23 @@ public class JdbcCRUDByStatement {
         }
     }
 //    @Test
-    public void find(String find_sql){
+    public User queryForUser(String find_sql){
         Connection conn = connection;
         Statement st = null;
         ResultSet rs = null;
+        User user = null;
         try{
             String sql = find_sql;
             st = conn.createStatement();
             rs = st.executeQuery(sql);
             while(rs.next()){
-                System.out.println("id=" +rs.getObject("id"));
-                System.out.println("name=" + rs.getObject("name"));
-                System.out.println("password=" + rs.getObject("password"));
-                System.out.println("email=" + rs.getObject("email"));
+                user = new User((String)rs.getObject("usernid"),
+                        (String)rs.getObject("password"),
+                        (String)rs.getObject("username"),
+                        (String)rs.getObject("sex"),
+                        (int)rs.getObject("age"),
+                        (String)rs.getObject("address"),
+                        (String)rs.getObject("tag"));
             }
             conn.close();
             st.close();
@@ -112,5 +118,6 @@ public class JdbcCRUDByStatement {
         }catch (Exception e) {
             e.printStackTrace();
         }
+        return user;
     }
 }
